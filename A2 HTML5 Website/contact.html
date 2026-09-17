@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Delivery | JeayR Boutique</title>
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header>
+        <h1>JeayR Boutique</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html"><strong>Contact & Delivery</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- Contact & Location Info -->
+        <section>
+            <h2>Get in Touch</h2>
+            <address>
+                <p><strong>Location:</strong> Port Moresby, National Capital District, PNG</p>
+                <p><strong>Phone / WhatsApp:</strong> +675 7000 0000</p>
+                <p><strong>Email:</strong> orders@jeayrboutique.com</p>
+            </address>
+        </section>
+
+        <hr>
+
+        <!-- Order & Delivery Form -->
+        <section>
+            <h2>Order & Delivery Form</h2>
+            <p>Fill out the form below to place an inquiry or request delivery across PNG.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <p>
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" required placeholder="e.g. Mary Kila">
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone" required placeholder="e.g. 71234567">
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" placeholder="e.g. mary@example.com">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Order & Delivery Details</legend>
+
+                    <p>
+                        <label for="product">Select Product:</label><br>
+                        <select id="product" name="product" required>
+                            <option value="">-- Choose an item --</option>
+                            <option value="floral-blouse">Floral Pattern Meri Blouse - K85.00</option>
+                            <option value="island-blouse">Island Print Meri Blouse - K95.00</option>
+                            <option value="shell-earrings">Handcrafted Shell Drop Earrings - K30.00</option>
+                            <option value="seed-necklace">Traditional Seed & Bead Necklace - K45.00</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="quantity">Quantity:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    </p>
+
+                    <p>
+                        <label for="province">Delivery Province:</label><br>
+                        <select id="province" name="province" required>
+                            <option value="">-- Select Location --</option>
+                            <option value="NCD">NCD (Port Moresby Pick-up / Drop-off)</option>
+                            <option value="Central">Central Province</option>
+                            <option value="Morobe">Morobe (Lae)</option>
+                            <option value="Other">Other PNG Province (Air Freight / Post PNG)</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="address">Delivery Address / Pick-up Location:</label><br>
+                        <textarea id="address" name="address" rows="4" cols="40" placeholder="Provide street details or airport/post office pickup location"></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Submit Order Request</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 JeayR Boutique. All rights reserved.</p>
+        <p>Port Moresby, Papua New Guinea</p>
+    </footer>
+
+</body>
+</html>
