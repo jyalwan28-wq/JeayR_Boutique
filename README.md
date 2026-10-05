@@ -7,18 +7,18 @@ Student ID: 24704056
 Flexbox: Used in 'nav ul' for horizontal navigation menu alignment.
 CSS Grid: Used in .product-grid' to arrange items into 1 column (mobile), 2 column (tablet), 3 column (desktop).
 
-# Screenshots & Testing Evidence
-Mobile View (375px)
+## Screenshots & Testing Evidence
+### Mobile View (375px)
 ![Mobile Screenshot](mobile-screenshot-home.png)
 ![Mobile Screenshot](mobile-screenshot-products.png)
 ![Mobile Screenshot](mobile-screenshot-contact.png)
 
-Tablet View (768px)
+### Tablet View (768px)
 ![Tablet Screenshot](tablet-screenshot-home.png)
 ![Tablet Screenshot](tablet-screenshot-products.png)
 ![Tablet Screenshot](tablet-screenshot-contact.png)
 
-Desktop View (1200px)
+### Desktop View (1200px)
 ![Desktop Screenshot](desktop-screenshot-home.png)
 ![Desktop Screenshot](desktop-screenshot-products.png)
 ![Desktop Screenshot](desktop-screenshot-contact.png)
