@@ -1,11 +1,11 @@
 # ISO229 Assessment 3: Responsive Website
 
-Student Name: Jerusah Yalwan
-Student ID: 24704056
+* **Student Name:** Jerusah Yalwan
+* **Student ID:** 24704056
 
-# Responsive Layouts
-Flexbox: Used in 'nav ul' for horizontal navigation menu alignment.
-CSS Grid: Used in .product-grid' to arrange items into 1 column (mobile), 2 column (tablet), 3 column (desktop).
+## Responsive Layouts
+* **Flexbox:** Used in 'nav ul' for horizontal navigation menu alignment.
+* **CSS Grid:** Used in .product-grid' to arrange items into 1 column (mobile), 2 column (tablet), 3 column (desktop).
 
 ## Screenshots & Testing Evidence
 ### Mobile View (375px)
