@@ -1,0 +1,278 @@
+\* =========================================================1.GLOBAL CSS VARIABLES & BASE RESET========================================================= */
+
+:root 
+ { 
+/*Color System (Deep Burgundy Theme)*/
+
+--primary-color: #800020;  /* Deep Burgundy */
+--primary-hover: #a31535;  /* Lighter Burgundy for hover/active */
+--accent-color: #f0e68c;   /* Soft Khaki Gold for sub-headings */
+--bg-main: #f9f8f6;        /* Warm off-white page background */
+--bg-card: #ffffff;        /* Pure white container/card background */
+--text-dark: #333333;      /* Dark slate body text */
+--border-light: #e0e0e0;   /* Subtle border tone */
+--footer-bg: #222222;      /* Dark footer background */
+--footer-text: #dddddd;    /* Soft light text for footer */
+--focus-ring: #2563eb;     /* High-contrast focus outline */
+
+/* Typography & Spacing */
+ --font-base: Arial, Helvetica, sans-serif;
+ --radius-sm: 4px; 
+ --radius-md: 8px;
+ --transition-fast: 0.2s ease-in-out;
+
+}
+
+/* Base Reset */
+  * { 
+     box-sizing: border-box;
+     margin: 0; 
+     padding: 0;
+   }
+
+body
+ { 
+  font-family: var(--font-base);
+  line-height: 1.6;
+  background-color: var(--bg-main); 
+  color: var(--text-dark); 
+ }
+
+/* ======================================================== 2.ACCESSIBILITY & FOCUS STATES ================================================================= */
+
+a:focus-visible,
+ button:focus-visible,
+ input:focus-visible,
+ select:focus-visible,
+ textarea:focus-visible
+
+ { 
+ outline: 3px solid var(--focus-ring);
+ outline-offset: 3px;
+}
+
+/* ===================================================== 3. HEADER & FLEXBOX NAVIGATION ==================================================================*/
+
+header 
+{
+background-color: #800020;
+color: #ffffff;
+padding: 1.5rem 1rem;
+text-align: center;
+}
+
+header h1
+{
+font-size: 1.8rem;
+}
+
+header p
+{
+margin-top: 0.25rem;
+font-size: 0.95rem;
+color: var(--accent-color);
+}
+
+/* FLEXBOX NAVIGATION*/
+
+nav 
+{
+ margin-top: 1rem;
+}
+
+nav ul
+{
+ list-style: none;
+ display: flex;    /* Meaningful 1D Flexbox layout */
+ justify-content: center;
+ align-items: center;
+ gap: 0.75rem;
+ flex-wrap: wrap;
+}
+
+nav ul li a {
+ color: #ffffff;
+ text-decoration: none;
+ font-weight: bold;
+ padding: 0.5rem 0.75rem;
+ border-radius: var(--radius-sm);
+ transition: background-color var(--transition-fast);
+ }
+
+nav ul li a:hover,
+nav ul li a.active {
+ background-color: var(--primary-hover);
+}
+
+/* =====================4.MAIN CONTAINER & SECTION TYPOGRAPHY==================== */
+
+main {
+ max-width: 1024px;
+ margin: 2rem auto;
+ background: var(--bg-card);
+ padding: 1.5rem;
+ border-radius: var(--radius-md);
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section {
+ margin-bottom: 2rem;
+}
+
+h2
+{
+ color: var(--primary-color);
+ border-bottom: 2px solid var(--border-light);
+ padding-bottom: 0.5rem;
+ margin-bottom: 1rem; 
+}
+
+h3
+{
+ color: #444444;
+ margin-bottom: 0.5rem;
+}
+
+/* Responsive Media & Figures*/
+figure {
+ margin: 0;
+}
+
+figure img {
+ width:118%;
+ height:450px;
+ object-fit: cover;
+}
+
+figcaption {
+ font-weight:bold;
+ margin-top:0.5rem;
+ font-size:1rem;
+}
+
+/*======================5. CSS GRID CONTENT & CARD DISPLAY (2D layout)======================== */
+
+/* Meaningful 2D CSS Grid Layout */
+
+.product-grid
+{
+ display: grid;
+ grid-template-columns: 1fr;  /* Default Mobile: Single Column */
+ gap: 1.25rem;
+}
+
+.product-card {
+  border: 1px solid var(--border-light);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-card);
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ============================6. FORM STYLING==================================== */
+
+form fieldset {
+ border: 1px solid var(--border-light);
+ padding: 1rem 1.25rem;
+ border-radius: var(--radius);
+ margin-bottom: 1rem;
+}
+
+legend {
+ font-weight: bold;
+ color: var(--primary-color);
+ padding: 0 0.5rem;
+}
+
+label {
+ display: block;
+ font-weight: bold;
+ font-size: 0.9rem;
+ margin-top: 0.75rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #cccccc;
+  border-radius: var(--radius-sm);
+}
+
+button
+{
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background-color var(--transition-fast);
+}
+
+button:hover
+{
+  background-color: var(--primary-hover);
+}
+
+/* =========================7. FOOTER =============================== */
+
+footer
+{
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  font-size: 0.85rem;
+  margin-top: 2.5rem;
+}
+
+footer p
+{
+  margin: 0.25rem 0;
+}
+
+/* ===================== 8. RESPONSIVE MEDIA QUERIES ========================= */
+
+/*TABLET VIEWPORT (600px - 900px)*/
+@media (min-width: 600px) {
+  header h1 {
+     font-size: 2.2rem;
+            }
+
+.product-grid
+ {
+  grid-template-columns: repeat(2, 1fr);  /*2-column grid for tablets*/
+ }
+  
+main 
+{
+ padding: 2rem;
+ }
+}
+
+/*DESKTOP VIEWPORT (1024px and above)*/
+ @media (min-width: 1024px)
+{
+.product-grid
+{ 
+  grid-template-columns: repeat(3, 1fr);  /* 3-column grid for desktop */
+  }
+
+header
+ {
+ padding: 2rem;
+ } 
+}
