@@ -9,19 +9,19 @@ CSS Grid: Used in .product-grid' to arrange items into 1 column (mobile), 2 colu
 
 # Screenshots & Testing Evidence
 Mobile View (375px)
-![Mobile Screenshot](screenshots/mobile-screenshot-home.png)
-![Mobile Screenshot](screenshots/mobile-screenshot-products.png)
-![Mobile Screenshot](screenshots/mobile-screenshot-contact.png)
+![Mobile Screenshot](mobile-screenshot-home.png)
+![Mobile Screenshot](mobile-screenshot-products.png)
+![Mobile Screenshot](mobile-screenshot-contact.png)
 
 Tablet View (768px)
-![Tablet Screenshot](screenshots/tablet-screenshot-home.png)
-![Tablet Screenshot](screenshots/tablet-screenshot-products.png)
-![Tablet Screenshot](screenshots/tablet-screenshot-contact.png)
+![Tablet Screenshot](tablet-screenshot-home.png)
+![Tablet Screenshot](tablet-screenshot-products.png)
+![Tablet Screenshot](tablet-screenshot-contact.png)
 
 Desktop View (1200px)
-![Desktop Screenshot](screenshots/desktop-screenshot-home.png)
-![Desktop Screenshot](screenshots/desktop-screenshot-products.png)
-![Desktop Screenshot](screenshots/desktop-screenshot-contact.png)
+![Desktop Screenshot](desktop-screenshot-home.png)
+![Desktop Screenshot](desktop-screenshot-products.png)
+![Desktop Screenshot](desktop-screenshot-contact.png)
 
 # AI Use Declaration
 I used generative AI to assist with explaining CSS Grid and debugging responsive layout issues. I reviewed, modified, and tested the final work myself.
