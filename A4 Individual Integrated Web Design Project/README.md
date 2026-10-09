@@ -12,7 +12,7 @@ Design Project
 ### 🌐 Submission & Publication Links 
 ***GitHub Repository URL:*** (https://github.com/jyalwan28-wq/JeayR_Boutique)
 
-***Published Live Website (GitHub Pages):*** [Paste Your Published GitHub Pages Link Here]
+***Published Live Website (GitHub Pages):*** https://jyalwan28-wq.github.io/JeayR_Boutique/
 
 ---
 ## 📌 Project Overview 
