@@ -1,0 +1,21 @@
+//Form Validation Feature
+const oderForm = document.getElementById('order-form');
+const phoneInput = document.getElementById('phone');
+const feedbackMsg = document.getElementById('form-feedback');
+
+if (orderForm) {
+ orderForm.addEventListener('submit', (e) =>
+}
+ e.preventDefault();  // Prevent page refresh
+
+// Simple PNG phone number check (must be at least 8 digits)
+const phoneValue = phoneInput.value.trim();
+if (phoneValue.length <8 || isNaN(phoneValue)) {
+feedbackMsg.textContent = 'Please enter a valid phone number (at least 8 digits).';
+   feedbackMsg.style.color = '#a31535'; // alert red phoneInput.focus();
+ } else {
+   feedbackMsg.textContent = 'Thank you! Your order request has been submitted successfully.';
+   feedbackMsg.style.color = '#2e7d32';  // Success green orderForm.reset(); 
+}
+});
+}
