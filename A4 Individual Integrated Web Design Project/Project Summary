@@ -1,0 +1,30 @@
+# ISO229 Assessment 4: Project Summary 
+**Student Name:** Jerusah Yalwan
+**Student ID:** 24704056
+**Subject:** ISO229 Web Design
+ **Project:** JeayR Boutique
+ --- 
+### 1. Website Purpose
+ JeayR Boutique is an online storefront designed to showcase and promote traditional Papua New Guinea (PNG) apparel—such as Meri blouses—alongside handcrafted shell and seed jewelry, making cultural fashion accessible through an engaging online platform [8, 9].
+
+ ### 2. Target Audience
+ The website targets local PNG shoppers seeking quality daily wear, cultural gift buyers, and international customers interested in authentic PNG traditional craftsmanship [8].
+
+ ### 3. Main Website Features 
+The platform is built using semantic HTML5 and styled with external CSS3 featuring a deep burgundy color palette (`#800020`) [5, 10]. Layouts utilize horizontal Flexbox for navigation and a 2D CSS Grid product layout that reflows across mobile (1 column), tablet (2 columns), and desktop (3 columns) viewports [6, 7, 11, 12]. Visible focus indicators (`:focus-visible`) and contrast compliance ensure accessibility throughout [13].
+
+ ### 4. JavaScript Functionality Implemented 
+Two core interactive features are implemented in `script.js` [3, 4]: 
+* **Product Image Lightbox Modal:** Allows customers to click product card images to open an enlarged modal view with detailed captions [3, 14]. It includes accessibility focus shifts (`closeModalBtn.focus()`), click-outside dismissal, and `Escape` key event listeners [4, 15].
+ * **Interactive Order Form Validation:** Validates checkout form inputs upon submission [4]. It verifies name presence, email syntax via regex, PNG phone numbers (7–8 digits), and dropdown menu selections, generating dynamic error messages and status banners (`.feedback-banner`) [16-18].
+
+ ### 5. Testing Performed 
+* **Functional & JS Testing:** Verified link navigation, modal open/close actions, keyboard `Esc` shortcuts, and form error states [15, 18, 19].
+ * **Responsive & Browser Testing:** Inspected layouts in DevTools Device Mode at 375px, 768px, and 1200px across Chrome and Edge [19, 20].
+ * **Accessibility & Validation:** Verified contrast, focus rings, and valid HTML5/CSS3 markup [13, 19].
+
+ ### 6. Known Limitations & Future Improvements
+ Current limitations include non-persistent form inputs after page reloads. Future enhancements could implement `localStorage` or load catalog items dynamically using a JSON fetch call [19].
+
+ ### 7. AI Use Declaration
+ I used generative AI (Gemini Notebook) to assist with explaining CSS Grid syntax, media query setup, and debugging JavaScript event listeners [21]. I reviewed, modified, and tested all final code and documentation myself [21].
